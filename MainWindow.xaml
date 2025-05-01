@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hello_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="367" Width="843">
     <Grid Margin="0,0,0,-73">
         <Button  x:Name="button" Content="hello" HorizontalAlignment="Left" Margin="45,56,0,0" VerticalAlignment="Top" Height="50" Width="95"/>
         <TextBlock Text="Hello,World!" FontSize="48"/>
-        <Button  Content="WPF中文网1" Panel.ZIndex="1" Margin="2 4 6 8" Padding="50" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="WPF中文网1" Panel.ZIndex="1" Margin="20" Padding="50" />
+        <Button Grid.Column="1" Content="WPF中文网2" Panel.ZIndex="0" Margin="20" Padding="50" />
     </Grid>
+
 </Window>
