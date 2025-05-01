@@ -24,10 +24,10 @@ namespace hello_wpf
                 Task.Delay(3000).Wait();
 
                 // Fix: Use the correct instance of the Button control  
-                button.Dispatcher.Invoke(() =>
-                {
-                    button.Content = "www.wpfsoft.com";
-                });
+                //button.Dispatcher.Invoke(() =>
+                //{
+                //    button.Content = "www.wpfsoft.com";
+                //});
             });
         }
     }

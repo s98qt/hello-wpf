@@ -7,8 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="367" Width="843">
     <Grid Margin="0,0,0,-73">
-        <Button  x:Name="button" Content="hello" HorizontalAlignment="Left" Margin="45,56,0,0" VerticalAlignment="Top" Height="50" Width="95"/>
-        <TextBlock Text="Hello,World!" FontSize="48"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
