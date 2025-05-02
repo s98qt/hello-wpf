@@ -6,13 +6,11 @@
         xmlns:local="clr-namespace:hello_wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="367" Width="843">
-    <Grid Margin="0,0,0,-73">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Button Grid.Column="0" Content="WPF中文网1" Panel.ZIndex="1" Margin="20" Padding="50" />
-        <Button Grid.Column="1" Content="WPF中文网2" Panel.ZIndex="0" Margin="20" Padding="50" />
-    </Grid>
+    <UniformGrid FirstColumn="1" Rows="3" Columns="3">
+        <Button Content="WPF中文网1" Margin="2"/>
+        <Button Content="WPF中文网2" Margin="2"/>
+        <Button Content="WPF中文网3" Margin="2"/>
+        <Button Content="WPF中文网4" Margin="2"/>
+    </UniformGrid>
 
 </Window>
