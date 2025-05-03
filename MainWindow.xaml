@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="367" Width="843">
     <!-- 借助blend可视化-->
-    <WrapPanel Margin="10">
+    <!-- <WrapPanel Margin="10">
         <Border Height="35" Margin="15" Padding="5" BorderThickness="2" BorderBrush="Gray">
             <TextBlock  Text="矩形 - Border控件" Margin="5" />
         </Border>
@@ -19,6 +19,17 @@
             Background="Red" BorderBrush="Gray" CornerRadius="75">
             <TextBlock  Text="椭圆Border控件" Margin="5" HorizontalAlignment="Center" FontWeight="Bold" VerticalAlignment="Center" Foreground="White" FontSize="14"/>
         </Border>
-    </WrapPanel>
-       
+    </WrapPanel> -->
+<!-- WPF样式是什么？-->
+    <Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button Content="文字块" Style="{StaticResource ButtonStyle}"/>
+    </Grid>
 </Window>
