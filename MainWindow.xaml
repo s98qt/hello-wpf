@@ -6,11 +6,18 @@
         xmlns:local="clr-namespace:hello_wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="367" Width="843">
-    <UniformGrid FirstColumn="1" Rows="3" Columns="3">
-        <Button Content="WPF中文网1" Margin="2"/>
-        <Button Content="WPF中文网2" Margin="2"/>
-        <Button Content="WPF中文网3" Margin="2"/>
-        <Button Content="WPF中文网4" Margin="2"/>
-    </UniformGrid>
+    <WrapPanel Margin="10">
+        <Border Height="35" Margin="15" Padding="5" BorderThickness="2" BorderBrush="Gray">
+            <TextBlock  Text="矩形 - Border控件" Margin="5" />
+        </Border>
+        <Border Height="35" Margin="10" Padding="5" BorderThickness="1" BorderBrush="Gray" CornerRadius="20">
+            <TextBlock  Text="椭圆 - Border控件" Margin="5" />
+        </Border>
+        <Border Width="150" Height="150" Margin="10" Padding="5" BorderThickness="1" 
+            Background="Red" BorderBrush="Gray" CornerRadius="75">
+            <TextBlock  Text="圆形Border控件" Margin="5" HorizontalAlignment="Center" 
+                    FontSize="16" FontWeight="Bold" VerticalAlignment="Center" Foreground="White"/>
+        </Border>
+    </WrapPanel>
 
 </Window>
