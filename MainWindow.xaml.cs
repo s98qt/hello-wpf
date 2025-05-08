@@ -25,16 +25,16 @@ namespace hello_wpf
             InitializeComponent();
 
             #region 异步线程  
-            //Task.Factory.StartNew(() =>  
-            //{  
-            //    Task.Delay(3000).Wait();  
+            Task.Factory.StartNew(() =>
+            {
+                Task.Delay(3000).Wait();
 
-            //    // Fix: Use the correct instance of the Button control    
-            //    //button.Dispatcher.Invoke(() =>  
-            //    //{  
-            //    //    button.Content = "www.wpfsoft.com";  
-            //    //});                
-            //});  
+                // Fix: Use the correct instance of the Button control    
+                //button.Dispatcher.Invoke(() =>  
+                //{  
+                //    button.Content = "www.wpfsoft.com";  
+                //});                
+            });
 
             //// 示例1：使用.Result属性  
             //Task<int> task0 = CalculateSomethingAsync();  
